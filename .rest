@@ -1,0 +1,61 @@
+###
+GET http://localhost:3000/empleados/
+
+###
+POST http://localhost:3000/empleados/
+Content-Type: application/json
+
+{
+    
+    "nombre": "Lucia",
+    "dni": "0000056789",
+    "sexo": "F",
+    "fecha_nacimiento": "1995-02-02",
+    "salario": 2500,
+    "cargo": "Jefa de cuentas",
+    "fk_departamento": 5,
+    "fk_jefe": 2
+
+}
+###
+POST http://localhost:3000/empleados/update
+Content-Type: application/json
+
+{
+    "idEmpleado": 15,
+    "nombre": "Lucia",
+    "dni": "0000056789",
+    "sexo": "F",
+    "fecha_nacimiento": "1995-02-02",
+    "salario": 2500,
+    "cargo": "Jefa de cuentas",
+    "fk_departamento": 5,
+    "fk_jefe": 2
+}
+###
+GET http://localhost:3000/empleados/delete/11
+
+###
+GET http://localhost:3000/departamentos
+
+###
+POST http://localhost:3000/departamentos
+Content-Type: application/json
+
+{
+    "nombre": "UX",
+    "ciudad": "Coruña"
+}
+
+###
+POST http://localhost:3000/departamentos/update
+Content-Type: application/json
+
+{
+    "idDepartamento": 6,
+    "nombre": "UX",
+    "ciudad": "Madrid"
+}
+
+###
+GET http://localhost:3000/departamentos/delete/6
